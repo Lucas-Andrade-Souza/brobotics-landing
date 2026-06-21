@@ -37,13 +37,17 @@ Depois de publicado e verificado no Search Console, use a barra de busca do pain
 ## Estrutura
 
 ```
-index.html              — HTML raiz
-public/robots.txt        — instruções para crawlers
-public/sitemap.xml        — mapa do site para o Google
-public/google*.html        — verificação do Search Console
-src/main.jsx              — ponto de entrada React
-src/App.jsx                — a landing page (todo o conteúdo e estilo)
-src/index.css                — reset CSS mínimo
+index.html                          — HTML raiz
+public/robots.txt                    — instruções para crawlers
+public/sitemap.xml                    — mapa do site para o Google
+public/google*.html                    — verificação do Search Console
+public/screenshots/                     — capturas de tela do app (alta qualidade)
+src/main.jsx                              — ponto de entrada React
+src/App.jsx                                — a landing page (todo o conteúdo e estilo)
+src/index.css                                — reset CSS mínimo
 ```
 
-Para editar textos, cores ou seções, mexa em `src/App.jsx`.
+Para editar textos, cores ou seções, mexa em `src/App.jsx`. As imagens de tela do
+app ficam em `public/screenshots/` como arquivos `.webp` separados — para trocar
+ou adicionar uma captura, coloque o arquivo nessa pasta e referencie pelo caminho
+`/screenshots/nome-do-arquivo.webp` no array `SCREENSHOTS` em `src/App.jsx`.
